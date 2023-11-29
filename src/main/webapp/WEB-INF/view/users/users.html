@@ -18,10 +18,10 @@
                 <a th:href="@{/user(id=${user.getId()})}" th:text="${user.getName()}">name</a>
             </td>
             <td>
-                <a th:href="@{/hello}" th:text="${user.getSurname()}">surname</a>
+                <a th:href="@{/user(id=${user.getId()})}" th:text="${user.getSurname()}">surname</a>
             </td>
             <td>
-                <a th:href="@{/hello}" th:text="${user.getEmail()}">email</a>
+                <a th:href="@{/user(id=${user.getId()})}" th:text="${user.getEmail()}">email</a>
             </td>
         </tr>
     </table>
